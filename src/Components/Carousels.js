@@ -1,14 +1,16 @@
-import Carousel from 'react-bootstrap/Carousel';
+import { Carousel } from 'react-bootstrap';
+import SpaceInJar from '../Assets/SpaceInJar.jpg'
 
 export default function Carousels() {
   return (
     <>
       <Carousel fade>
-        
-        <Carousel.Item>
+        {/* holder.js/800x400?text=First slide&bg=373940 */}
+        <Carousel.Item style={{'height':"300px"}}>
           <img
+            style={{'width':'100%'}}
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
+            src={SpaceInJar}
             alt="First slide"
           />
           <Carousel.Caption>
@@ -20,7 +22,7 @@ export default function Carousels() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            src="/Flower.jpg/800x400?text=Second slide&bg=282c34"
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -28,6 +30,8 @@ export default function Carousels() {
             <p>Fill in the blanks, laugh.</p>
           </Carousel.Caption>
         </Carousel.Item>
+
+        
 
         <Carousel.Item>
           <img
@@ -37,10 +41,22 @@ export default function Carousels() {
           />
           <Carousel.Caption>
             <h3>Zero G Drinks</h3>
-            <p>Learn how to make your drink and about space.</p>
+            <p>Learn about space.</p>
           </Carousel.Caption>
         </Carousel.Item>
-
+        
+        
+        {/* <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="holder.js/800x400?text=Second slide&bg=282c34"
+            alt="Fourth slide"
+          />
+          <Carousel.Caption>
+            <h3>Zero G Drinks</h3>
+            <p>Learn about your drink.</p>
+          </Carousel.Caption>
+        </Carousel.Item> */}
 
       </Carousel>
     </>
