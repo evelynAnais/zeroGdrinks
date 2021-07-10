@@ -12,3 +12,13 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.card {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.card p {
+  margin-bottom: 0;
+}
