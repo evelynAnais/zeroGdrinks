@@ -8,8 +8,7 @@ export default function Carousels() {
   return (
     <>
       <Carousel fade>
-        {/* holder.js/800x400?text=First slide&bg=373940 */}
-        <Carousel.Item style={{'height':'300px'}}>
+        <Carousel.Item style={{'height':'275px'}}>
           <img
             style={{'width':'100%'}}
             className="d-block w-100"
@@ -21,8 +20,7 @@ export default function Carousels() {
             <p>because why not</p>
           </Carousel.Caption>
         </Carousel.Item>
-
-        <Carousel.Item style={{'height':'300px'}}>
+        <Carousel.Item style={{'height':'275px'}}>
           <img
             style={{'width':'100%'}}
             className="d-block w-100"
@@ -34,10 +32,7 @@ export default function Carousels() {
             <p>Fill in the blanks, laugh.</p>
           </Carousel.Caption>
         </Carousel.Item>
-
-        
-
-        <Carousel.Item style={{'height':'300px'}}>
+        <Carousel.Item style={{'height':'275px'}}>
           <img
             style={{'width':'100%'}}
             className="d-block w-100"
@@ -49,9 +44,7 @@ export default function Carousels() {
             <p>Learn about space.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        
-        
-        <Carousel.Item style={{'height':'300px'}}>
+        <Carousel.Item style={{'height':'275px'}}>
           <img
             style={{'width':'100%'}}
             className="d-block w-100"
@@ -63,7 +56,6 @@ export default function Carousels() {
             <p>Learn about your drink.</p>
           </Carousel.Caption>
         </Carousel.Item>
-
       </Carousel>
     </>
   )

@@ -7,13 +7,13 @@ export default function Header() {
       <Carousels />
       <ul className="nav justify-content-center">
         <li className="nav-item">
-          <Link className="nav-link" to='/'>Home</Link>
+          <Link className="nav-link text-dark" to='/'>Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='/Space'>Space</Link>
+          <Link className="nav-link text-dark" to='/Space'>Space</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='/Drinks'>Drinks</Link>
+          <Link className="nav-link text-dark" to='/Drinks'>Drinks</Link>
         </li>
       </ul>
     </>  
