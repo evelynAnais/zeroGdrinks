@@ -1,12 +1,15 @@
 import { Carousel } from 'react-bootstrap';
-import SpaceInJar from '../Assets/SpaceInJar.jpg'
+import SpaceInJar from '../Assets/SpaceInJar.jpg';
+import Party from '../Assets/Party.jpg';
+import SpaceTree from '../Assets/SpaceTree.jpg';
+import LetsDrink from '../Assets/LetsDrink.jpg';
 
 export default function Carousels() {
   return (
     <>
       <Carousel fade>
         {/* holder.js/800x400?text=First slide&bg=373940 */}
-        <Carousel.Item style={{'height':"300px"}}>
+        <Carousel.Item style={{'height':'300px'}}>
           <img
             style={{'width':'100%'}}
             className="d-block w-100"
@@ -19,10 +22,11 @@ export default function Carousels() {
           </Carousel.Caption>
         </Carousel.Item>
 
-        <Carousel.Item>
+        <Carousel.Item style={{'height':'300px'}}>
           <img
+            style={{'width':'100%'}}
             className="d-block w-100"
-            src="/Flower.jpg/800x400?text=Second slide&bg=282c34"
+            src={Party}
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -33,10 +37,11 @@ export default function Carousels() {
 
         
 
-        <Carousel.Item>
+        <Carousel.Item style={{'height':'300px'}}>
           <img
+            style={{'width':'100%'}}
             className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
+            src={SpaceTree}
             alt="Third slide"
           />
           <Carousel.Caption>
@@ -46,17 +51,18 @@ export default function Carousels() {
         </Carousel.Item>
         
         
-        {/* <Carousel.Item>
+        <Carousel.Item style={{'height':'300px'}}>
           <img
+            style={{'width':'100%'}}
             className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            src={LetsDrink}
             alt="Fourth slide"
           />
           <Carousel.Caption>
             <h3>Zero G Drinks</h3>
             <p>Learn about your drink.</p>
           </Carousel.Caption>
-        </Carousel.Item> */}
+        </Carousel.Item>
 
       </Carousel>
     </>
