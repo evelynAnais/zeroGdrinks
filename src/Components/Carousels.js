@@ -1,8 +1,8 @@
 import { Carousel } from 'react-bootstrap';
-import SpaceInJar from '../Assets/SpaceInJar.jpg';
-import Party from '../Assets/Party.jpg';
-import SpaceTree from '../Assets/SpaceTree.jpg';
-import LetsDrink from '../Assets/LetsDrink.jpg';
+import SpaceInJar from '../assets/SpaceInJar.jpg';
+import Party from '../assets/Party.jpg';
+import SpaceTree from '../assets/SpaceTree.jpg';
+import LetsDrink from '../assets/LetsDrink.jpg';
 
 export default function Carousels() {
   return (
