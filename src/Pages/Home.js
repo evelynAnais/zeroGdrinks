@@ -6,9 +6,11 @@ import DrinkCard from '../components/home/DrinkCard';
 
 export default function Home() {
   return (
-    <>
+    <>true
+      ?
       <Intro />
       <WordForm />
+      :
       <Story />
       <SpaceCard />
       <DrinkCard />
