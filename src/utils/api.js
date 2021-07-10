@@ -1,6 +1,6 @@
 const ASTRO_URL = 'http://api.open-notify.org/astros.json';
-const SPACE_URL = 'api.le-systeme-solaire.net/rest.php';
-const DRINK_URL = 'www.thecocktaildb.com/api/json/v1/1/random.php';
+const SPACE_URL = 'https://api.le-systeme-solaire.net/rest.php';
+const DRINK_URL = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
 
 
 
@@ -30,17 +30,17 @@ async function fetchJson(url, options, onCancel) {
   }
 }
 
-export async function getPeople(people, signal) {
+export async function getPeople() {
   const url = `${ASTRO_URL}`;
-  return await fetchJson(url, { signal }, []);
+  return await fetchJson(url, {});
 }
 
-export async function spaceItem(signal) {
+export async function spaceItem() {
   const url = `${SPACE_URL}`;
-  return await fetchJson(url, { signal }, {});
+  return await fetchJson(url, {});
 }
 
-export async function randomDrink(signal) {
+export async function randomDrink() {
   const url = `${DRINK_URL}`;
-  return await fetchJson(url, { signal }, {});
+  return await fetchJson(url, {});
 }
