@@ -4,7 +4,7 @@ import WordForm from '../components/home/WordForm';
 import Intro from '../components/home/Intro';
 import Story from '../components/home/Story';
 import SpaceCard from '../components/home/SpaceCard';
-import DrinkCard from '../components/home/DrinkCard';
+import DrinkCard from '../components/DrinkCard';
 
 export default function Home() {
   const [drink, setDrink] = useState({drinks: []});
@@ -19,9 +19,14 @@ export default function Home() {
       <Intro />
       <WordForm />
       :
-      <Story drink={drink.drinks} />
-      <SpaceCard />
-      <DrinkCard drink={drink.drinks} />
+      <Story drink={drink.drinks[0]} />
+      
+      <div className='container'>
+        <div className='row d-flex justify-content-around'>
+          <SpaceCard />
+          <DrinkCard drink={drink.drinks[0]} />
+        </div>
+      </div>
     </>
   )
 }
