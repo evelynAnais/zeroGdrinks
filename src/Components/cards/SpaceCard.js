@@ -1,16 +1,19 @@
-import { Card } from 'react-bootstrap'
+import { Card, ListGroup } from 'react-bootstrap'
 
 export default function SpaceCard({ spaceObject }) {
   return (
-    <Card style={{ width: '18rem', margin: '10px' }}>
-      <Card.Img variant='top' src='' />
-      <Card.Body>
-        <Card.Title>{spaceObject?.englishName}</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the bulk of
-          the card's content.
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    <div className='container'>
+      <div className='row d-flex justify-content-around'>
+        <Card style={{ width: '18rem', margin: '10px' }}>
+          <Card.Header style={{ width: '18rem' }}>Name: {spaceObject?.name}</Card.Header>
+          <ListGroup variant="flush">
+            <ListGroup.Item>English Name: {spaceObject?.englishName}</ListGroup.Item>
+            <ListGroup.Item>Discovered By: {spaceObject?.discoveredBy}</ListGroup.Item>
+            <ListGroup.Item>Discovered Day: {spaceObject?.discoveryDate}</ListGroup.Item>
+          </ListGroup>
+        </Card>
+      </div>
+    </div>
   )
 }
+

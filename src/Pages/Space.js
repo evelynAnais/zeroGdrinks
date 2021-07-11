@@ -27,6 +27,7 @@ export default function Space() {
   return (
     <>
       <CarouselInSpace spacePeople={spacePeople} />
+      <h3 className='row d-flex justify-content-around'>Random Space Objects</h3>
       <SpaceList spaceObjectList={spaceObjectList} objectFunction={object} />
     </>
   )
