@@ -6,7 +6,7 @@ import SpaceList from '../components/space/SpaceList';
 
 export default function Space() {
   const [spacePeople, setSpacePeople] = useState({ people: [] });
-  const [spaceObject, setSpaceObject] = useState({ bodies: [] })
+  const [spaceObjectList, setSpaceObjectList] = useState([])
 
   function people() {
     getPeople().then(setSpacePeople)
@@ -15,16 +15,19 @@ export default function Space() {
 
   function object() {
     spaceItem().then((response) => {
-      const obj = response.bodies[Math.floor(Math.random() * response.bodies.length)]
-      setSpaceObject(obj)
+      const randomObjects = []
+      for (let i = 0; i < 10; i++) {
+        randomObjects.push(response.bodies[Math.floor(Math.random() * response.bodies.length)])
+      }
+      setSpaceObjectList(randomObjects)
     })
   }
   useEffect(object, [])
-  
+
   return (
     <>
       <CarouselInSpace spacePeople={spacePeople} />
-      <SpaceList spaceObject={spaceObject} />
+      <SpaceList spaceObjectList={spaceObjectList} objectFunction={object} />
     </>
   )
 }
