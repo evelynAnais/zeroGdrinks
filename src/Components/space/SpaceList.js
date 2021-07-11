@@ -1,9 +1,18 @@
 import SpaceCard from "../cards/SpaceCard";
 
-export default function SpaceList({ spaceObject }) {
+export default function SpaceList({ spaceObjectList, objectFunction }) {
+  const spaceList = spaceObjectList.map((spaceObject, index) => (
+    <SpaceCard key={index} spaceObject={spaceObject} />
+  ))
+  
+  const newObjectClick = () => objectFunction()
+
   return (
-    <>SpaceList
-      <SpaceCard spaceObject={spaceObject} />
+    <>
+      {spaceList}
+      <button type='button' className="btn btn-success" onClick={newObjectClick}>
+        more space stuff, because why not!!
+      </button>
     </>
   )
 }
