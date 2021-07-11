@@ -15,13 +15,12 @@ export default function Space() {
 
   function object() {
     spaceItem().then((response) => {
-      console.log('jjjjjj', response)
       const obj = response.bodies[Math.floor(Math.random() * response.bodies.length)]
       setSpaceObject(obj)
     })
   }
   useEffect(object, [])
-console.log(spaceObject)
+  
   return (
     <>
       <CarouselInSpace spacePeople={spacePeople} />
