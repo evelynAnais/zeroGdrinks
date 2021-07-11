@@ -3,8 +3,8 @@ import { randomDrink } from '../utils/api';
 import WordForm from '../components/home/WordForm';
 import Intro from '../components/home/Intro';
 import Story from '../components/home/Story';
-import SpaceCard from '../components/home/SpaceCard';
-import DrinkCard from '../components/DrinkCard';
+import SpaceCard from '../components/cards/SpaceCard';
+import DrinkCard from '../components/cards/DrinkCard';
 
 export default function Home() {
   const [drink, setDrink] = useState({drinks: []});

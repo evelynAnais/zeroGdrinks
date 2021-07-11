@@ -7,7 +7,7 @@ import LetsDrink from '../assets/LetsDrink.jpg';
 export default function Carousels() {
   return (
     <>
-      <Carousel fade>
+      <Carousel fade controls={false}>
         <Carousel.Item style={{'height':'275px'}}>
           <img
             style={{'width':'100%'}}

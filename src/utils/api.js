@@ -1,5 +1,5 @@
 const ASTRO_URL = 'http://api.open-notify.org/astros.json';
-const SPACE_URL = 'https://api.le-systeme-solaire.net/rest.php';
+const SPACE_URL = 'https://api.le-systeme-solaire.net/rest.php/bodies';
 const DRINK_URL = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
 
 

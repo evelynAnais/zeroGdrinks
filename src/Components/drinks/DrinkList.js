@@ -1,5 +1,5 @@
 import { useState } from "react"
-import DrinkCard from "../DrinkCard"
+import DrinkCard from "../cards/DrinkCard"
 
 export default function DrinkList({ drink }) {
   // instead of this drinks comes as a list already

@@ -1,5 +1,9 @@
-export default function SpaceList() {
+import SpaceCard from "../cards/SpaceCard";
+
+export default function SpaceList({ spaceObject }) {
   return (
-    <>SpaceList</>
+    <>SpaceList
+      <SpaceCard spaceObject={spaceObject} />
+    </>
   )
 }

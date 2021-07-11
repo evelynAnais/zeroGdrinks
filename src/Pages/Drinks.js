@@ -3,7 +3,7 @@ import DrinkList from "../components/drinks/DrinkList";
 import { randomDrink } from "../utils/api";
 
 export default function Drinks() {
-  const [drink, setDrink] = useState({drinks: []});
+  const [drink, setDrink] = useState({ drinks: [] });
 
   function spaceDrink() {
     randomDrink().then(setDrink)
