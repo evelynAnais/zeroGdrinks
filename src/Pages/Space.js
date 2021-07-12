@@ -3,7 +3,6 @@ import { getPeople, spaceItem } from '../utils/api';
 import CarouselInSpace from '../components/space/CarouselInSpace';
 import SpaceList from '../components/space/SpaceList';
 
-
 export default function Space() {
   const [spacePeople, setSpacePeople] = useState({ people: [] });
   const [spaceObjectList, setSpaceObjectList] = useState([])

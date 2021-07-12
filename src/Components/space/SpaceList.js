@@ -18,7 +18,7 @@ export default function SpaceList({ spaceObjectList, objectFunction }) {
         </div>
       </div>
       <div className='row d-flex justify-content-around'>
-        <button type='button' className="btn btn-success" onClick={newObjectClick}>
+        <button type='button' className="btn btn-dark" onClick={newObjectClick}>
           More random space stuff, because why not!!
         </button>
       </div>

@@ -29,14 +29,9 @@ export default function Home() {
       <Intro />
       <WordForm />
       :
-      <Story drink={drink.drinks[0]} />
-      
-      <div className='container'>
-        <div className='row d-flex justify-content-around'>
-          <SpaceCard spaceObject={spaceObject} />
-          <DrinkCard drink={drink.drinks[0]} />
-        </div>
-      </div>
+      <Story drink={drink.drinks[0]} spaceObject={spaceObject} />
+      <SpaceCard spaceObject={spaceObject} />
+      <DrinkCard drink={drink.drinks[0]} />
     </>
   )
 }

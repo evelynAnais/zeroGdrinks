@@ -1,22 +1,29 @@
-import { useState } from "react"
 import DrinkCard from "../cards/DrinkCard"
 
-export default function DrinkList({ drink }) {
-  // instead of this drinks comes as a list already
-  const [drinks, setDrinks] = useState([])
-  // const [showItems, setShowItems] = useState(1)
-  // while showItems < drinks.length 
-  // count button handler setsShowItems showItems + 1
-  // at drinks.length callback makeDrinkList()
-console.log('drinklist',drinks)
-  // this maps drinks the prop
-  const drinkList = drinks.map((drink, index) => (
-    <DrinkCard key={index} drink={drink} />
-  ))
+export default function DrinkList({ drinkList, makeDrinkListFunction }) {
+  const drinkItems = drinkList.map((drink, index) => {
+    return (
+      <DrinkCard key={index} drink={drink.drinks[0]} />
+    )
+  })
+
+  const newDrinkClick = () => makeDrinkListFunction()
 
   return (
-    <>
-      {drinkList}
-    </>
+    <div className='container'>
+      <div className="row">
+        <div className="col">
+          {drinkItems.slice(0,5)}
+        </div>
+        <div className="col">
+          {drinkItems.slice(5)}
+        </div>
+      </div>
+      <div className='row d-flex justify-content-around'>
+        <button type='button' className="btn btn-dark" onClick={newDrinkClick}>
+          More random alcohol stuff, because why not!!
+        </button>
+      </div>
+    </div>
   )
 }

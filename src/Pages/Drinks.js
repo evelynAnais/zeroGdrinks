@@ -3,25 +3,22 @@ import DrinkList from "../components/drinks/DrinkList";
 import { randomDrink } from "../utils/api";
 
 export default function Drinks() {
-  const [drink, setDrink] = useState({ drinks: [] });
+  const [drinkList, setDrinkList] = useState([]);
 
-  function spaceDrink() {
-    randomDrink().then(setDrink)
+  function makeDrinkList() {
+    const callList = [];
+    for(let i = 0; i < 10; i++) {
+      callList.push(randomDrink());
+    }
+    Promise.all(callList).then(res => setDrinkList(res));
   }
-  /* function makeDrinkList() {
-   *   const callList = [];
-   *   for(let i = 1; i < 10; i++) {
-   *     callList.push(randomDrink());
-   *   }
-   *   Promise.all(callList).then(res => setDrinks(res));
-   * }
-   *
-   */
-  useEffect(spaceDrink, [])
-console.log('Drinks', drink)
+  
+  useEffect(makeDrinkList, [])
+
   return (
     <>
-      <DrinkList drink={drink.drinks[0]} />
+      <h3 className='row d-flex justify-content-around'>Random Drinks!</h3>
+      <DrinkList drinkList={drinkList} makeDrinkListFunction={makeDrinkList} />
     </>
   )
 }
