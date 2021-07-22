@@ -1,6 +1,5 @@
-const verbs = ['run', 'jump']
-const nouns = []
-const adjectives = []
+const verbsRandom = ['run', 'jump']
+const nounsRandom = []
+const adjectivesRandom = []
+const timeOfDayRandom = ['morning', 'midnight', 'noon', 'night', 'evening']
 
-
-// 
