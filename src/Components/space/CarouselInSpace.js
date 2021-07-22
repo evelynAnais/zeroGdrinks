@@ -3,7 +3,7 @@ import SpaceImg from '../../assets/Space.jpg'
 
 export default function CarouselView({ spacePeople }) {
   const galaxyPeoples = spacePeople.people.map((peoples, index) => (
-    <Carousel.Item key={index} style={{ 'height':'80px', 'display':'flex', 'alignItems':'center'}}>
+    <Carousel.Item key={index} style={{ 'height':'80px', 'display':'flex', 'align-items':'center'}}>
       <img
         style={{'width':'100%'}}
         className="d-block w-100"

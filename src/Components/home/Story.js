@@ -1,4 +1,6 @@
-export default function Story({ drink, spaceObject }) {
+export default function Story({ drink, spaceObject, story }) {
+
+
   return (
     <div>
       <h3>Drinking with Bob/UserName in Space!!!</h3>

@@ -9,6 +9,9 @@ import DrinkCard from '../components/cards/DrinkCard';
 export default function Home() {
   const [drink, setDrink] = useState({drinks: []});
   const [spaceObject, setSpaceObject] = useState({ bodies: [] })
+  const [story, setStory] = useState({})
+
+  const createStory = (newStory) => setStory(newStory) 
 
   function spaceDrink() {
     randomDrink().then(setDrink)
@@ -27,9 +30,9 @@ export default function Home() {
     <>true
       ?
       <Intro />
-      <WordForm />
+      <WordForm createStory={createStory} />
       :
-      <Story drink={drink.drinks[0]} spaceObject={spaceObject} />
+      <Story drink={drink.drinks[0]} spaceObject={spaceObject} story={story} />
       <SpaceCard spaceObject={spaceObject} />
       <DrinkCard drink={drink.drinks[0]} />
     </>
