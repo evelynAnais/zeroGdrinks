@@ -5,7 +5,7 @@ export default function Intro() {
     <div className='container'>
       <Card>
         <Card.Body className='card'>
-          <h6>You want to drink, I want you to drink, learn about space and laugh!</h6>
+          <h5>You want to drink, I want you to drink, learn about space and laugh!</h5>
           <p>Let's make this quick, fill in the blanks and click "Lets's do this!" You will
             get a funny story, or at least I hope it's funny haha! Then you will get two 
             cards with info about your drink and a space object.</p>
