@@ -7,7 +7,10 @@ export default function DrinkList({ drinkList, makeDrinkListFunction }) {
     )
   })
 
-  const newDrinkClick = () => makeDrinkListFunction()
+  const newDrinkClick = () => {
+    makeDrinkListFunction()
+    window.scrollTo(0,0)
+  }
 
   return (
     <div className='container'>

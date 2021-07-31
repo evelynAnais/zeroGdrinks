@@ -5,7 +5,10 @@ export default function SpaceList({ spaceObjectList, objectFunction }) {
     <SpaceCard key={index} spaceObject={spaceObject} />
   ))
   
-  const newObjectClick = () => objectFunction()
+  const newObjectClick = () => {
+    objectFunction()
+    window.scrollTo(0,0)
+  }  
 
   return (
     <div className='container'>
