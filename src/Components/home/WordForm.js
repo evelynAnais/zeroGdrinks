@@ -3,8 +3,12 @@ import { useState } from 'react';
 export default function WordForm({ createStory }) {
   const [story, setStory] = useState({
     name:'',
-    two:'',
-    three:'',
+    feeling:'',
+    descriptive:'',
+    friend:'',
+    number:'',
+    artist:'',
+    color:'',
   })
 
   const handleChange = (e) => setStory({
@@ -29,23 +33,73 @@ export default function WordForm({ createStory }) {
           onChange={handleChange}
         />
       </label>
-      <label htmlFor='two'>
-        Two:
+      <label htmlFor='feeling'>
+        feeling:
         <input 
           type='text' 
-          id='two' 
-          name='two'
-          value={story.two}
+          id='feeling' 
+          name='feeling'
+          value={story.feeling}
           onChange={handleChange}
         />
       </label>
-      <label htmlFor='three'>
-        Three:
+      <label htmlFor='descriptive'>
+        descriptive word:
         <input 
           type='text' 
-          id='three' 
-          name='three'
-          value={story.three}
+          id='descriptive' 
+          name='descriptive'
+          value={story.descriptive}
+          onChange={handleChange}
+        />
+      </label>
+      <label htmlFor='friend'>
+        friend name:
+        <input 
+          type='text' 
+          id='friend' 
+          name='friend'
+          value={story.friend}
+          onChange={handleChange}
+        />
+      </label>
+      <label htmlFor='number'>
+        number:
+        <input 
+          type='text' 
+          id='number' 
+          name='number'
+          value={story.number}
+          onChange={handleChange}
+        />
+      </label>
+      <label htmlFor='artist'>
+        artist:
+        <input 
+          type='text' 
+          id='artist' 
+          name='artist'
+          value={story.artist}
+          onChange={handleChange}
+        />
+      </label>
+      <label htmlFor='color'>
+        color:
+        <input 
+          type='text' 
+          id='color' 
+          name='color'
+          value={story.color}
+          onChange={handleChange}
+        />
+      </label>
+      <label htmlFor='bodyPart'>
+        body part:
+        <input 
+          type='text' 
+          id='bodyPart' 
+          name='bodyPart'
+          value={story.bodyPart}
           onChange={handleChange}
         />
       </label>
