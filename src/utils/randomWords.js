@@ -9,15 +9,3 @@ export const timesRandom = ['months', 'days', 'years', 'millennia', 'weeks', 'ce
 export function randomWord(list) {
   return list[Math.floor(Math.random() * list.length)]
 }
-
-// user fill in
-// you name
-// descriptive
-// friend name
-// idol name
-//
-//
-//
-//
-//
-//
