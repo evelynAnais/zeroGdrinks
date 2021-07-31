@@ -9,7 +9,7 @@ import DrinkCard from '../components/cards/DrinkCard';
 export default function Home() {
   const [drink, setDrink] = useState({drinks: []});
   const [spaceObject, setSpaceObject] = useState({ bodies: [] })
-  const [story, setStory] = useState({})
+  const [story, setStory] = useState(null)
 
   const createStory = (newStory) => setStory(newStory) 
 
@@ -27,14 +27,19 @@ export default function Home() {
   useEffect(object, [])
 
   return (
-    <>true
+    <>{!story
       ?
+      <>
       <Intro />
       <WordForm createStory={createStory} />
+      </>
       :
+      <>
       <Story drink={drink.drinks[0]} spaceObject={spaceObject} story={story} />
       <SpaceCard spaceObject={spaceObject} />
       <DrinkCard drink={drink.drinks[0]} />
+      </>
+      }
     </>
   )
 }
