@@ -30,14 +30,14 @@ export default function Home() {
     <>{!story
       ?
       <>
-      <Intro />
-      <WordForm createStory={createStory} />
+        <Intro />
+        <WordForm createStory={createStory} />
       </>
       :
       <>
-      <Story drink={drink.drinks[0]} spaceObject={spaceObject} story={story} />
-      <SpaceCard spaceObject={spaceObject} />
-      <DrinkCard drink={drink.drinks[0]} />
+        <Story drink={drink.drinks[0]} spaceObject={spaceObject} story={story} />
+        <SpaceCard spaceObject={spaceObject} />
+        <DrinkCard drink={drink.drinks[0]} />
       </>
       }
     </>
