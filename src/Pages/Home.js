@@ -31,6 +31,8 @@ export default function Home() {
       ?
       <>
         <Intro />
+        <br/>
+        <h3 className='row d-flex justify-content-around'>Fill, Read, Drink!</h3>
         <WordForm createStory={createStory} />
       </>
       :
