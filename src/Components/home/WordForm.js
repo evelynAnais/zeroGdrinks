@@ -103,6 +103,26 @@ export default function WordForm({ createStory }) {
           onChange={handleChange}
         />
       </label>
+      <label htmlFor='idol'>
+        idol:
+        <input 
+          type='text' 
+          id='idol' 
+          name='idol'
+          value={story.idol}
+          onChange={handleChange}
+        />
+      </label>
+      <label htmlFor='object'>
+        object:
+        <input 
+          type='text' 
+          id='object' 
+          name='object'
+          value={story.object}
+          onChange={handleChange}
+        />
+      </label>
       <button type='submit' >hey</button>
     </form>
   )
