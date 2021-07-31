@@ -1,10 +1,10 @@
+import { randomWord, timeOfDayRandom, weatherRandom } from "../../utils/randomWords"
+
 export default function Story({ drink, spaceObject, story }) {
-
-
   return (
     <div>
-      <h3>Drinking with Bob/UserName in Space!!!</h3>
-      <p>One sunny/adjective morning/timeofday in a galaxy called the milky way 
+      <h3>Drinking with { story?.name } in Space!!!</h3>
+      <p>One { randomWord(weatherRandom) } {  } morning/timeofday in a galaxy called the milky way 
         bob/username was feeling happy/emotion. bob/username suddenly woke up 
         rattled/excitingword from sleep and remembered they know live on 
         moon/spaceobject.  {spaceObject?.name} reminising about the good

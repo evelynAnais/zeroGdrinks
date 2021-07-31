@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 export default function WordForm({ createStory }) {
   const [story, setStory] = useState({
-    one:'',
+    name:'',
     two:'',
     three:'',
   })
@@ -18,14 +18,14 @@ export default function WordForm({ createStory }) {
   }
 
   return (
-    <form >
-      <label htmlFor='one'>
-        One:
+    <form onSubmit={handleSubmit}>
+      <label htmlFor='name'>
+        Name:
         <input 
           type='text' 
-          id='one' 
-          name='one'
-          value={story.one}
+          id='name' 
+          name='name'
+          value={story.name}
           onChange={handleChange}
         />
       </label>
@@ -49,6 +49,7 @@ export default function WordForm({ createStory }) {
           onChange={handleChange}
         />
       </label>
+      <button type='submit' >hey</button>
     </form>
   )
 }
