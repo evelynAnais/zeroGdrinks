@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import { randomDrink, spaceItem } from './utils/api';
 import './App.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import Space from './pages/Space';
 import Drinks from './pages/Drinks';
@@ -50,6 +51,7 @@ function App() {
         <Route path='/space' component={Space} />
         <Route path='/drinks' component={Drinks} />
       </Switch>
+      <Footer />
     </>
   );
 }
