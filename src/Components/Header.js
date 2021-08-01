@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom';
 import Carousels from './Carousels';
 
-export default function Header() {
+export default function Header({ reset }) {
   return (
     <>
       <Carousels />
       <ul className='nav justify-content-center'>
-        <li className='nav-item'>
+        <li onClick={reset} className='nav-item'>
           <Link className='nav-link text-dark' to='/'>Home</Link>
         </li>
         <li className='nav-item'>
