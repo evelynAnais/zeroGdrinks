@@ -31,7 +31,7 @@ export default function WordForm({ createStory }) {
           <label htmlFor='name' class='form-label'>
             Name:
             <input 
-              class="form-control mb-3"
+              className="form-control mb-3"
               type='text' 
               id='name' 
               name='name'
@@ -42,7 +42,7 @@ export default function WordForm({ createStory }) {
           <label htmlFor='feeling'>
             Feeling:
             <input 
-              class="form-control mb-3"
+              className="form-control mb-3"
               type='text' 
               id='feeling' 
               name='feeling'
@@ -53,7 +53,7 @@ export default function WordForm({ createStory }) {
         <label htmlFor='descriptive'>
           Descriptive Word:
           <input 
-            class="form-control mb-3"
+            className="form-control mb-3"
             type='text' 
             id='descriptive' 
             name='descriptive'
@@ -64,7 +64,7 @@ export default function WordForm({ createStory }) {
         <label htmlFor='friend'>
           Friend Name:
           <input 
-            class="form-control mb-3"
+            className="form-control mb-3"
             type='text' 
             id='friend' 
             name='friend'
@@ -75,7 +75,7 @@ export default function WordForm({ createStory }) {
         <label htmlFor='number'>
           Number:
           <input 
-            class="form-control mb-3"
+            className="form-control mb-3"
             type='text' 
             id='number' 
             name='number'
@@ -86,7 +86,7 @@ export default function WordForm({ createStory }) {
         <label htmlFor='artist'>
           Music Artist:
           <input 
-            class="form-control mb-3"
+            className="form-control mb-3"
             type='text' 
             id='artist' 
             name='artist'
@@ -97,7 +97,7 @@ export default function WordForm({ createStory }) {
         <label htmlFor='color'>
           Color:
           <input 
-            class="form-control mb-3"
+            className="form-control mb-3"
             type='text' 
             id='color' 
             name='color'
@@ -108,7 +108,7 @@ export default function WordForm({ createStory }) {
         <label htmlFor='bodyPart'>
           Body Part (plural):
           <input 
-            class="form-control mb-3"
+            className="form-control mb-3"
             type='text' 
             id='bodyPart' 
             name='bodyPart'
@@ -119,7 +119,7 @@ export default function WordForm({ createStory }) {
         <label htmlFor='person'>
           Favorite Person:
           <input 
-            class="form-control mb-3"
+            className="form-control mb-3"
             type='text' 
             id='person' 
             name='person'
@@ -130,7 +130,7 @@ export default function WordForm({ createStory }) {
         <label htmlFor='object'>
           Gift Object:
           <input 
-            class="form-control mb-3"
+            className="form-control mb-3"
             type='text' 
             id='object' 
             name='object'
