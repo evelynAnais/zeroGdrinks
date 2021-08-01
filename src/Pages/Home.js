@@ -20,6 +20,7 @@ export default function Home({ story, drink, spaceObject, reset, createStory }) 
       }
     };
   }, [history, story, createStory]);
+  
   return (
     <>{!story
       ?
