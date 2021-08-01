@@ -1,47 +1,25 @@
-import { useEffect, useState } from 'react';
-import { randomDrink, spaceItem } from '../utils/api';
+import { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 import WordForm from '../components/home/WordForm';
 import Intro from '../components/home/Intro';
 import Story from '../components/home/Story';
 import SpaceCard from '../components/cards/SpaceCard';
 import DrinkCard from '../components/cards/DrinkCard';
 
-export default function Home({ history }) {
-  const [drink, setDrink] = useState({drinks: []});
-  const [spaceObject, setSpaceObject] = useState({ bodies: [] });
-  const [story, setStory] = useState(null);
-
-  const createStory = (newStory) => setStory(newStory) ;
-
-  function spaceDrink() {
-    randomDrink().then(setDrink);
-  }
-  useEffect(spaceDrink, []);
-
-  function object() {
-    spaceItem().then((response) => {
-      const obj = response.bodies[Math.floor(Math.random() * response.bodies.length)]
-      setSpaceObject(obj);
-    });
-  }
-  useEffect(object, []);
+export default function Home({ story, drink, spaceObject, reset, createStory }) {
+  const history = useHistory();
 
   useEffect(() => {
     return () => {
       if (story) {
         if (history.action === 'POP' ) {
-          setStory(null);
+          createStory(null);
           history.push('/');
+          
         }
       }
     };
-  }, [history, story]);
-
-  const reset = () => {
-    setStory(null);
-    window.scrollTo(0,0);
-  }
-
+  }, [history, story, createStory]);
   return (
     <>{!story
       ?
