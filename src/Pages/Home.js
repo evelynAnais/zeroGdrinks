@@ -6,7 +6,7 @@ import Story from '../components/home/Story';
 import SpaceCard from '../components/cards/SpaceCard';
 import DrinkCard from '../components/cards/DrinkCard';
 
-export default function Home() {
+export default function Home({ history }) {
   const [drink, setDrink] = useState({drinks: []});
   const [spaceObject, setSpaceObject] = useState({ bodies: [] })
   const [story, setStory] = useState(null)
@@ -25,6 +25,17 @@ export default function Home() {
     })
   }
   useEffect(object, [])
+
+  useEffect(() => {
+    return () => {
+      if (story) {
+        if (history.action === "POP" ) {
+          setStory(null);
+          history.push('/')
+        }
+      }
+    };
+  }, [history])
 
   const reset = () => setStory(null)
 
