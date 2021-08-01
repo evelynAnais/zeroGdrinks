@@ -112,14 +112,14 @@ export default function WordForm({ createStory }) {
             onChange={handleChange}
           />
         </label>
-        <label htmlFor='idol'>
-          Idol:
+        <label htmlFor='person'>
+          Favorite Person:
           <input 
             class="form-control mb-3"
             type='text' 
-            id='idol' 
-            name='idol'
-            value={story.idol}
+            id='person' 
+            name='person'
+            value={story.person}
             onChange={handleChange}
           />
         </label>
