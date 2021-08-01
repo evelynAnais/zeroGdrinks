@@ -8,36 +8,36 @@ import DrinkCard from '../components/cards/DrinkCard';
 
 export default function Home({ history }) {
   const [drink, setDrink] = useState({drinks: []});
-  const [spaceObject, setSpaceObject] = useState({ bodies: [] })
-  const [story, setStory] = useState(null)
+  const [spaceObject, setSpaceObject] = useState({ bodies: [] });
+  const [story, setStory] = useState(null);
 
-  const createStory = (newStory) => setStory(newStory) 
+  const createStory = (newStory) => setStory(newStory) ;
 
   function spaceDrink() {
-    randomDrink().then(setDrink)
+    randomDrink().then(setDrink);
   }
-  useEffect(spaceDrink, [])
+  useEffect(spaceDrink, []);
 
   function object() {
     spaceItem().then((response) => {
       const obj = response.bodies[Math.floor(Math.random() * response.bodies.length)]
       setSpaceObject(obj)
-    })
+    });
   }
-  useEffect(object, [])
+  useEffect(object, []);
 
   useEffect(() => {
     return () => {
       if (story) {
-        if (history.action === "POP" ) {
+        if (history.action === 'POP' ) {
           setStory(null);
-          history.push('/')
+          history.push('/');
         }
       }
     };
-  }, [history])
+  }, [history, story]);
 
-  const reset = () => setStory(null)
+  const reset = () => setStory(null);
 
   return (
     <>{!story
@@ -62,5 +62,5 @@ export default function Home({ history }) {
       </>
       }
     </>
-  )
+  );
 }

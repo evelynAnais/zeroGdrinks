@@ -3,7 +3,7 @@ const SPACE_URL = 'https://api.le-systeme-solaire.net/rest.php/bodies';
 const DRINK_URL = 'https://www.thecocktaildb.com/api/json/v1/1/random.php';
 
 const headers = new Headers();
-headers.append("Content-Type", "application/json");
+headers.append('Content-Type', 'application/json');
 
 async function fetchJson(url, options, onCancel) {
   try {
@@ -20,7 +20,7 @@ async function fetchJson(url, options, onCancel) {
     return await response.json();
 
   } catch (error) {
-    if (error.name !== "AbortError") {
+    if (error.name !== 'AbortError') {
       console.error(error.stack);
       throw error;
     }

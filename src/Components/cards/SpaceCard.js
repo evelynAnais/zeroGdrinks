@@ -14,6 +14,6 @@ export default function SpaceCard({ spaceObject }) {
         </Card>
       </div>
     </div>
-  )
+  );
 }
 

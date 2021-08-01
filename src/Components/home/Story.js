@@ -1,5 +1,5 @@
-import { Card } from 'react-bootstrap'
-import { randomWord, weatherRandom, timeOfDayRandom, timeRandom, sizeRandom, beautyRandom, timesRandom, partyRandom, sizesRandom, amazingRandom, unexpectedRandom } from "../../utils/randomWords"
+import { Card } from 'react-bootstrap';
+import { randomWord, weatherRandom, timeOfDayRandom, timeRandom, sizeRandom, beautyRandom, timesRandom, partyRandom, sizesRandom, amazingRandom, unexpectedRandom } from '../../utils/randomWords';
 
 export default function Story({ drink, spaceObject, story }) {
   return (
@@ -26,5 +26,5 @@ export default function Story({ drink, spaceObject, story }) {
         </Card.Body>
       </Card>
     </div>
-  )
+  );
 }

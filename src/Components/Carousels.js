@@ -56,5 +56,5 @@ export default function Carousels() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-  )
+  );
 }    

@@ -62,5 +62,5 @@ export default function DrinkCard({ drink }) {
         </Card>
       </div>
     </div>  
-  )
+  );
 }

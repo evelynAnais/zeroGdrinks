@@ -1,15 +1,15 @@
-import DrinkCard from "../cards/DrinkCard"
+import DrinkCard from "../cards/DrinkCard";
 
 export default function DrinkList({ drinkList, makeDrinkListFunction }) {
   const drinkItems = drinkList.map((drink, index) => {
     return (
       <DrinkCard key={index} drink={drink.drinks[0]} />
-    )
-  })
+    );
+  });
 
   const newDrinkClick = () => {
-    makeDrinkListFunction()
-    window.scrollTo(0,0)
+    makeDrinkListFunction();
+    window.scrollTo(0,0);
   }
 
   return (
@@ -28,5 +28,5 @@ export default function DrinkList({ drinkList, makeDrinkListFunction }) {
         </button>
       </div>
     </div>
-  )
+  );
 }

@@ -9,12 +9,15 @@ export default function WordForm({ createStory }) {
     number:'',
     artist:'',
     color:'',
-  })
+    bodyPart:'',
+    person:'',
+    object:'',
+  });
 
   const handleChange = (e) => setStory({
     ...story,
     [e.target.name]:e.target.value
-  })
+  });
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -137,5 +140,5 @@ export default function WordForm({ createStory }) {
         <button type='submit' className="btn btn-dark" >Let's do this!</button>
       </form>
     </div>
-  )
+  );
 }

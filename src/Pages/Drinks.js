@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
-import DrinkList from "../components/drinks/DrinkList";
-import { randomDrink } from "../utils/api";
+import { useEffect, useState } from 'react';
+import DrinkList from '../components/drinks/DrinkList';
+import { randomDrink } from '../utils/api';
 
 export default function Drinks() {
   const [drinkList, setDrinkList] = useState([]);
@@ -13,12 +13,12 @@ export default function Drinks() {
     Promise.all(callList).then(res => setDrinkList(res));
   }
   
-  useEffect(makeDrinkList, [])
-console.log(drinkList[0]?.drinks[0])
+  useEffect(makeDrinkList, []);
+
   return (
     <>
       <h3 className='row d-flex justify-content-around'>Random Drinks!</h3>
       <DrinkList drinkList={drinkList} makeDrinkListFunction={makeDrinkList} />
     </>
-  )
+  );
 }
