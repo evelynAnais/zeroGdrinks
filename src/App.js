@@ -40,6 +40,7 @@ function App() {
       </div>
       <Switch>
         <Route path='/zeroGdrinks' exact>
+          {/* path '/' if not in github pages. while in git hub pages it needs '/zeroGdrinks' */}
           <Home 
             story={story} 
             drink={drink} 
