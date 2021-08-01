@@ -39,7 +39,7 @@ function App() {
         <Header reset={reset} />
       </div>
       <Switch>
-        <Route path='/' exact>
+        <Route path='/zeroGdrinks' exact>
           <Home 
             story={story} 
             drink={drink} 

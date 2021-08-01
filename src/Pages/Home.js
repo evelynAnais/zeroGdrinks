@@ -14,7 +14,7 @@ export default function Home({ story, drink, spaceObject, reset, createStory }) 
       if (story) {
         if (history.action === 'POP' ) {
           createStory(null);
-          history.push('/');
+          history.push('/zeroGdrinks');
           
         }
       }
