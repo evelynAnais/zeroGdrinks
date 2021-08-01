@@ -20,8 +20,9 @@ export default function WordForm({ createStory }) {
   });
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    createStory(story)
+    e.preventDefault();
+    createStory(story);
+    window.scrollTo(0,0);
   }
 
   return (

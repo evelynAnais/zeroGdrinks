@@ -21,7 +21,7 @@ export default function Home({ history }) {
   function object() {
     spaceItem().then((response) => {
       const obj = response.bodies[Math.floor(Math.random() * response.bodies.length)]
-      setSpaceObject(obj)
+      setSpaceObject(obj);
     });
   }
   useEffect(object, []);
@@ -37,7 +37,10 @@ export default function Home({ history }) {
     };
   }, [history, story]);
 
-  const reset = () => setStory(null);
+  const reset = () => {
+    setStory(null);
+    window.scrollTo(0,0);
+  }
 
   return (
     <>{!story
