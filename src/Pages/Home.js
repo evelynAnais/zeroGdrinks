@@ -37,7 +37,7 @@ export default function Home({ story, drink, spaceObject, reset, createStory }) 
         <DrinkCard drink={drink.drinks[0]} />
         <div className='container'>
           <div className='row d-flex justify-content-around'>
-            <button type='button' className="btn btn-dark" onClick={reset}>Start Again! Because, why not!</button>
+            <button type='button' className='btn btn-dark' onClick={reset}>Start Again! Because, why not!</button>
           </div>
         </div>
         

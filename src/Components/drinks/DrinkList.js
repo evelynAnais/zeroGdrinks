@@ -1,4 +1,4 @@
-import DrinkCard from "../cards/DrinkCard";
+import DrinkCard from '../cards/DrinkCard';
 
 export default function DrinkList({ drinkList, makeDrinkListFunction }) {
   const drinkItems = drinkList.map((drink, index) => {
@@ -14,16 +14,16 @@ export default function DrinkList({ drinkList, makeDrinkListFunction }) {
 
   return (
     <div className='container'>
-      <div className="row">
-        <div className="col">
+      <div className='row'>
+        <div className='col'>
           {drinkItems.slice(0,5)}
         </div>
-        <div className="col">
+        <div className='col'>
           {drinkItems.slice(5)}
         </div>
       </div>
       <div className='row d-flex justify-content-around'>
-        <button type='button' className="btn btn-dark" onClick={newDrinkClick}>
+        <button type='button' className='btn btn-dark' onClick={newDrinkClick}>
           More random alcohol stuff, because why not!!
         </button>
       </div>

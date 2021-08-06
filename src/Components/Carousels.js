@@ -10,9 +10,9 @@ export default function Carousels() {
       <Carousel.Item style={{'height':'275px'}}>
         <img
           style={{'width':'100%'}}
-          className="d-block w-100"
+          className='d-block w-100'
           src={SpaceInJar}
-          alt="First slide"
+          alt='First slide'
         />
         <Carousel.Caption>
           <h3>Zero G Drinks</h3>
@@ -22,9 +22,9 @@ export default function Carousels() {
       <Carousel.Item style={{'height':'275px'}}>
         <img
           style={{'width':'100%'}}
-          className="d-block w-100"
+          className='d-block w-100'
           src={Party}
-          alt="Second slide"
+          alt='Second slide'
         />
         <Carousel.Caption>
           <h3>Zero G Drinks</h3>
@@ -34,9 +34,9 @@ export default function Carousels() {
       <Carousel.Item style={{'height':'275px'}}>
         <img
           style={{'width':'100%'}}
-          className="d-block w-100"
+          className='d-block w-100'
           src={SpaceTree}
-          alt="Third slide"
+          alt='Third slide'
         />
         <Carousel.Caption>
           <h3>Zero G Drinks</h3>
@@ -46,9 +46,9 @@ export default function Carousels() {
       <Carousel.Item style={{'height':'275px'}}>
         <img
           style={{'width':'100%'}}
-          className="d-block w-100"
+          className='d-block w-100'
           src={LetsDrink}
-          alt="Fourth slide"
+          alt='Fourth slide'
         />
         <Carousel.Caption>
           <h3>Zero G Drinks</h3>
