@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/zeroGdrinks/static/css/main.03038efd.chunk.css",
-    "main.js": "/zeroGdrinks/static/js/main.19da0355.chunk.js",
-    "main.js.map": "/zeroGdrinks/static/js/main.19da0355.chunk.js.map",
+    "main.js": "/zeroGdrinks/static/js/main.142ce398.chunk.js",
+    "main.js.map": "/zeroGdrinks/static/js/main.142ce398.chunk.js.map",
     "runtime-main.js": "/zeroGdrinks/static/js/runtime-main.d4fd8acf.js",
     "runtime-main.js.map": "/zeroGdrinks/static/js/runtime-main.d4fd8acf.js.map",
     "static/js/2.59b9a714.chunk.js": "/zeroGdrinks/static/js/2.59b9a714.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.d4fd8acf.js",
     "static/js/2.59b9a714.chunk.js",
     "static/css/main.03038efd.chunk.css",
-    "static/js/main.19da0355.chunk.js"
+    "static/js/main.142ce398.chunk.js"
   ]
 }
