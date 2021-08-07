@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import DrinkList from '../components/drinks/DrinkList';
 import Loading from '../components/Loading';
 import { randomDrink } from '../utils/api';
+import Martini from '../assets/Martini.svg'
+
 
 export default function Drinks() {
   const [drinkList, setDrinkList] = useState([]);
@@ -24,7 +26,7 @@ export default function Drinks() {
   return (
     <>
       <h3 className='row d-flex justify-content-around'>Random Drinks!</h3>
-      {loading && <Loading />}
+      {loading && <Loading svgSrc={Martini} />}
       <DrinkList drinkList={drinkList} makeDrinkListFunction={makeDrinkList} />
     </>
   );
