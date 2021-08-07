@@ -10,7 +10,7 @@ export default function Drinks() {
   const [loading, setLoading] = useState(false);
 
   function makeDrinkList() {
-    setLoading(true)
+    setLoading(true);
     const callList = [];
     for(let i = 0; i < 10; i++) {
       callList.push(randomDrink());
