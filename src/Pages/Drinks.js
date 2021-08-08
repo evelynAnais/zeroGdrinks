@@ -27,7 +27,8 @@ export default function Drinks() {
     <>
       <h3 className='row d-flex justify-content-around'>Random Drinks!</h3>
       {loading && <Loading svgSrc={Martini} />}
-      <DrinkList drinkList={drinkList} makeDrinkListFunction={makeDrinkList} />
+      {!loading && <DrinkList drinkList={drinkList} makeDrinkListFunction={makeDrinkList} />}
+      
     </>
   );
 }
